@@ -1,0 +1,70 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>464</y><w>168</w><h>168</h></coordinates><panel_attributes>Evento
+--
+-ID: entero
+-lugar: string
+-fecha y hora: datetime
+-cantidadMuesta
+-periodoInscripciones: datetime
+-periodoEntregaMuestras: datetime
+--
++definirLugar()
++definirFecha/hora()
++editarCatidadMuestras()
++editarPeriodoInscripciones()
++editarEntregaMuestras()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>304</y><w>168</w><h>64</h></coordinates><panel_attributes>Participantes
+--
+-rango: string
+--
++enviarSolicitudIngreso()
++inscripciónCerveza()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>496</y><w>168</w><h>72</h></coordinates><panel_attributes>Cervezas
+--
+-codigo: ramdon
+-categoria: entero
+-estilo: string
+--
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>32</x><y>304</y><w>168</w><h>112</h></coordinates><panel_attributes>Juez director
+--
+
+--
++crearEvento()
++controlarPerfilSteward()
++modificarProvilegioSteward()
++autorizarSolicitudes()
++asignarMesas()
++asignarNCervezasMesa()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>304</y><w>168</w><h>56</h></coordinates><panel_attributes>Juez
+--
+-rango: string
+--
++juzgarCervezas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>304</y><w>168</w><h>56</h></coordinates><panel_attributes>Steward
+--
+
+--
++privilegiosDadosPorJuezDirector()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>0</y><w>168</w><h>184</h></coordinates><panel_attributes>&lt;&lt;Usuarios&gt;&gt;
+--
+-ID: entero
+-nombre: string
+-ciudad: string
+-teléfono: entero
+-correo: email
+-contraseña: string
+--
++registrarse()
++iniciarSesión()
++verificaciónLogin()
++actualizarPerfil()
++visualizarResultadosPorMuestra()
++visualizarResultadosPorMesa()
++visualizarResuktadosFinales()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>120</y><w>256</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>300;10;10;40;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>176</y><w>96</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;100;90;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>176</y><w>96</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90;100;160</additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>360</y><w>128</w><h>152</h></coordinates><panel_attributes>Inscripción de cervezas</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>128</x><y>408</y><w>128</w><h>168</h></coordinates><panel_attributes>Crear evento</panel_attributes><additional_attributes>10;10;10;190;140;190</additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>360</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;70;180;70;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>376</y><w>136</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10;150;110</additional_attributes></element><element><id>Relation</id><coordinates><x>96</x><y>352</y><w>656</w><h>312</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;370;800;370;800;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>352</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>120</y><w>248</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;290;50;290;230</additional_attributes></element></diagram>
